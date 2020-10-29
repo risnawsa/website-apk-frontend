@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all pagination styles.
+// -----------------------------------------------------------------------------
+
+.pagination-apk{
+    .pagination{
+        .page-item{
+            .page-link{
+                padding: 15px 20px;
+                color: $black;
+                background-color: #f3f4f7;
+                @include on-event{
+                    color: $white !important;
+                    font-weight: 600;
+                    background-color: $primary-light;
+                }
+            }
+            &.--arrows{
+                .page-link{
+                    color: $primary-btn;
+                }
+            }
+        }
+    }
+}

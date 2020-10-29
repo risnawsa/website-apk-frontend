@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains all colors styles.
+// -----------------------------------------------------------------------------
+
+///start : main brand color
+
+//main colors
+$black: #000000;
+$white: #ffffff;
+
+//main background-colors
+$blue: #1b77ba;
+$primary-light: #1c79be; //Round 2
+$secondary-light: #f0f3fa; //Berita Terkini Section
+$line-footer: #439bdd;
+$main-line: #dfdfdf;
+$sub-line: #d3d3d3;
+
+//main text-colors
+$grey-text: #1072bb; //Text
+$dark-text: #454e5f; //Heading 2
+$blue-text: #1072bb; //Heading 1
+$light-grey: #9da0a5;
+$light-bg: #d4d5d9;
+
+//main button colors
+$primary-btn: #2ebbff; //Button
+$secondary-btn: #33bcfe; //Link / a href
+
+///end : main brand color
+
+
+// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'lg-dekstop': 1230px,
+  'md-dekstop': 991px,
+
+  'lg-tablet': 767px,
+  'md-tablet': 600px,
+  'sm-tablet': 575px,
+
+  'lg-mobile': 425px,
+  'xs-mobile': 300px,
+) !default;
+

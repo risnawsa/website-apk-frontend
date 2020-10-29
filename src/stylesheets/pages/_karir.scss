@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains all karir styles.
+// -----------------------------------------------------------------------------
+
+
+.karir-sec{
+    margin: 8rem 0;
+    .items{
+        .imgs-karir{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 90%;
+            @media screen and (max-width: 991px) {
+                padding-top: 100%;
+            }
+            @media screen and (max-width: 767px) {
+                padding-top: 120%;
+            }
+            @media screen and (max-width: 575px) {
+                padding-top: 55%;
+            }
+            border-radius: 20px;
+        }
+
+        .sub-title-karir{
+            margin-top: -35px;
+            @media screen and (max-width: 991px) {
+                margin-top: -20px;
+            }
+            @media screen and (max-width: 575px) {
+                margin-top: 0;
+            }
+        }
+
+        .middle-contents{
+            display: grid;
+            min-height: 180px;
+            padding: 10px 0;
+            @media screen and (max-width: 991px) {
+                padding: 0;
+            }
+            @media screen and (max-width: 575px) {
+               min-height: auto;
+            }
+            .--middle{
+                display: grid;
+                margin-top: auto;
+            }
+        }
+
+        .--btns{
+            margin: auto;
+            text-align: center;
+            @media screen and (max-width: 991px) {
+                text-align: left;
+                padding-left: 0;
+                padding-top: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all helpers styles.
+// -----------------------------------------------------------------------------
+.row{
+    margin: 0;
+}
+
+ul{
+    padding-inline-start: 0;
+    li{
+        padding-bottom: 10px;
+        a{
+            color: $white;
+            transition: all .5s ease-in-out;
+        }
+    }
+
+    &.list-disc-menus{
+        list-style-type: disc;
+        padding-inline-start: 18px;
+        li{
+            padding-left: 5px;
+        }
+    }
+}

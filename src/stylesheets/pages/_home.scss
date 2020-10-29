@@ -1,0 +1,500 @@
+// -----------------------------------------------------------------------------
+// This file contains all home styles.
+// -----------------------------------------------------------------------------
+
+.topmenu{
+    position: relative;
+    .overlays{
+        height: 100%;
+        position: absolute;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,119,186,1) 0%, rgba(27,119,186,0.5) 100%);
+        z-index: 2;
+        border-bottom-left-radius: 100px;
+        width: 100%;
+    }
+    .header-akp{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: 3;
+    }
+    .carousel-menus{
+        position: relative;
+        .carousel{
+            .carousel-indicators{
+                z-index: 2;
+                transform: translate(0, -50%);
+                bottom: unset;
+                left: 100px;
+                @media screen and (max-width: 767px) {
+                    left: 30px;
+                }
+                @media screen and (max-width: 575px) {
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                }
+                width: 100px;
+                top: 65%;
+                padding-left: unset;
+                margin-right: unset;
+                margin-left: unset;
+                li{
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 100%;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.contents{
+    section{
+        &.tab-banners{
+            .bg{
+                .container{
+                    position: relative;
+                    .--home-ct{
+                        background-color: $white;
+                        box-shadow: 5px 20px 20px -10px rgb(231, 237, 250);
+                        margin: 2rem 0;
+                        z-index: 2;
+                        border-radius: 20px;
+                        margin-top: -88px;
+                        .nav{
+                            margin: 0;
+                            .nav-item{
+                                .nav-link{
+                                    padding: 25px;
+                                    @media screen and (max-width: 767px) {
+                                        padding: 20px 10px;
+                                    }
+                                    background-color: $secondary-light;
+                                    color: $dark-text;
+                                    border-bottom: unset;
+                                    &.active{
+                                        background-color: $white;
+                                        color: $blue-text;
+                                        .menus{
+                                            div{
+                                                i{
+                                                    border: 1px solid $blue-text;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    @include on-event{
+                                        background-color: $white;
+                                        color: $blue-text;
+                                        .menus{
+                                            div{
+                                                i{
+                                                    border: 1px solid $blue-text;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .menus{
+                                        div{
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            i{
+                                                background-color: transparent;
+                                                padding: 10px;
+                                                border: 1px solid $main-line;
+                                                border-radius: 50%;
+                                                transition: all .3s ease-in-out;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tab-content{
+                            background-color: $white;
+                            padding: 30px;
+                            border-bottom-right-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                            @media screen and (max-width: 575px) {
+                                padding: 20px 15px;
+                            }
+                            form{
+                                .form-group{
+                                    button{
+                                        &.submit-btns{
+                                            width: 140px;
+                                            @media screen and (max-width: 767px) {
+                                                margin: auto;
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.result-search{
+            .cards{
+                background-color: $white;
+                border-radius: 20px;
+                box-shadow: 5px 20px 20px -10px #e7edfa;
+                .header-cards{
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    background-color: $light-bg;
+                    padding: 25px 30px;
+                    display: inline-flex;
+                    @media screen and (max-width: 575px) {
+                        display: block;
+                        padding: 20px 30px;
+                    }
+                    width: 100%;
+                    p{    
+                        line-height: 15px;
+                        margin-bottom: 0;
+                        &:first-of-type{
+                            border-right: 1px solid $black;
+                            @media screen and (max-width: 575px) {
+                                border-right: unset;
+                            }
+                        }
+                        &.--awb{
+                            padding-right: 3rem;
+                            @media screen and (max-width: 575px) {
+                                padding-right: 0;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        &.--hwb{
+                            padding-left: 3rem;
+                            @media screen and (max-width: 575px) {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+                .body-cards{
+                    padding: 30px;
+                    padding-bottom: 0;
+                    .subheaders{
+                        border-radius: 20px;
+                        background-color: $blue-text;
+                        color: $white;
+                        padding: 20px 30px;
+                        .liner{
+                            border: .3px solid $white;
+                            height: 0;
+                            margin-top: 37px;
+                            position: relative;
+                            @media screen and (max-width: 424px) {
+                                display: none;
+                            }
+                            .liner-circle{
+                                background-color: $white;
+                                border-radius: 50%;
+                                position: absolute;
+                                
+                                &.ft-circle{
+                                    height: 5px;
+                                    width: 5px;
+                                    left: 0;
+                                    top: -2px;
+                                }
+                                &.current-circle{
+                                    height: 15px;
+                                    width: 15px;
+                                    right: -3px;
+                                    border: 5px solid $primary-btn;
+                                    top: -7px;
+                                }
+                            }
+                        }
+                    }
+                    .main-body{
+                        padding-top: 2rem;
+                        .body-result{   
+                            @media screen and (max-width: 767px){
+                                &:last-of-type{
+                                    .left-menu-track{
+                                        border-right: unset !important;
+                                        &::before{
+                                            background-color: transparent !important;
+                                        }
+                                    }
+                                }
+                                .left-menu-track{
+                                    border-right: unset !important;
+                                    &::before{
+                                        background-color: transparent !important;
+                                    }
+                                    &.--active{
+                                        &::before{
+                                            background-color: transparent !important;
+                                            border: unset !important;
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-of-type{
+                                .left-menu-track{
+                                    border-right: unset;
+                                    &::before{
+                                        background-color: $primary-btn;
+                                        right: -2.5px;
+                                    }
+                                }
+                            }
+                            .left-menu-track{
+                                border-right: 1px solid $sub-line;
+                                position: relative;
+                                &::before{
+                                    position: absolute;
+                                    border-radius: 50%;
+                                    content: '';
+                                    background-color: $primary-light;
+                                    right: -3.5px;
+                                    top: 0;
+                                    height: 5px;
+                                    width: 5px;
+                                }
+                                &.--active{
+                                    &::before{
+                                        height: 15px;
+                                        width: 15px;
+                                        background-color: $white;
+                                        right: -8.5px;
+                                        border: 5px solid $primary-light;
+                                    }
+                                }
+                            }
+                            .right-menu-track{
+                                .list-track{
+                                    padding: 15px 30px;
+                                    border: 1px solid $sub-line;
+                                    margin-bottom: 2rem;
+                                    border-radius: 20px;
+                                }
+                            }
+                        }
+                        .date-track{
+                            .list-date-track{
+                                padding-right: 10px;
+                                height: 120px;
+                                @media screen and (max-width: 991px) {
+                                    height: 140px;
+                                }
+                                @media screen and (max-width: 767px) {
+                                    border-right: unset;
+                                    height: auto;
+                                }
+                                
+                                p{
+                                    font-size: 14px !important;
+                                    margin-bottom: 0;
+                                    line-height: 1.2;  
+                                    line-height: 1.5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.tentang-kami{
+            .bg{
+                padding: 5rem 0;
+            }
+        }
+        &.menu-tabs-home{
+            .bg{
+                padding: 5rem 0;
+                padding-left: 5%;
+                margin-right: 5%;
+                @media screen and (max-width: 767px) {
+                    padding-left: 0;
+                    margin-right: 0;
+                }
+                border-bottom-right-radius: 100px;
+                border-top-right-radius: 100px;
+                background-image: url('../../../dist/fe/images/produk_bg.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                .--prodkSer{
+                    .nav{
+                        &.flex-column{
+                            @media screen and (max-width: 767px) {
+                                grid-gap: 10px;
+                                padding: 5px 0;
+                                grid-template-columns: 150px 250px 230px;
+                            }
+                        }
+                        .nav-link{
+                            background-color: $white;  
+                            border: 1px solid $secondary-light;  
+                            margin: 5px 0 1rem;
+                            padding: 20px 30px;
+                            border-radius: 10px;
+                            transition: all .5s ease-in-out;
+                            @media screen and (max-width: 767px) {
+                                margin: 10px 0;
+                                padding: 15px;
+                            }
+                            &.active{
+                                background-color: $blue-text;
+                                .txt{
+                                    color: $white;
+                                }
+                                .inc{
+                                    i{
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            @include on-event{
+                                background-color: $blue-text; 
+                                .txt{
+                                    color: $white;
+                                }
+                                .inc{
+                                    i{
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            .txt{
+                                color: $dark-text;
+                            }
+                            .inc{
+                                i{
+                                    color: $secondary-btn;
+                                }
+                                @media screen and (max-width: 767px) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .tab-content{
+                        .tab-pane{
+                            transition: all .3s ease-in-out;
+                            .menu-contents{
+                                ul{
+                                    li{
+                                        padding-bottom: 0;
+                                        p{
+                                            line-height: 1.5;
+                                            span{
+                                                padding-right: 10px;
+                                                i{
+                                                    background-color: $white;
+                                                    color: $blue-text;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.berita-terkini{
+            .bg{
+                border-top-left-radius: 100px;
+                padding: 5rem 0 20rem;
+            }
+        }
+        &.maps_subs{
+            .container{
+                position: relative;
+                .contents{
+                    position: absolute;
+                    top: -200px;
+                    height: 100%;
+                    width: 100%;
+                    .ms{
+                        position: relative;
+                        z-index: 2;
+                        @media screen and (max-width: 575px) {
+                            width: calc(100% - 30px);
+                        }
+                        #maps {
+                            border-radius: 50px;
+                            height: 400px;
+                            width: 100%;
+                            @media screen and (max-width: 991px) {
+                                border-radius: 30px;
+                                height: 300px;
+                            }
+                        }
+                        .subsribes{
+                            background-color: $white;
+                            padding: 40px 50px;
+                            border-radius: 10px;
+                            width: 700px;
+                            margin: auto;
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            left: 50%;
+                            bottom: -27.5%;
+                            @media screen and (max-width: 991px) {
+                                padding: 25px 35px;
+                                width: 500px;
+                                bottom: -35%;
+                            }
+                            @media screen and (max-width: 767px) {
+                                width: calc(100% - 50px);
+                            }
+                            @media screen and (max-width: 575px) {
+                                position: unset;
+                                left: 0;
+                                transform: unset;
+                                bottom: 0;
+                                margin: 1.5rem auto;
+                                width: 100%;
+                                padding: 20px;
+                            }
+                            form{
+                                display: grid;
+                                grid-template-columns: minmax(1px, auto) minmax(1px, 145px);
+                                @media screen and (max-width: 767px) {
+                                    grid-template-columns: minmax(1px, auto) minmax(1px, 133px);
+                                    grid-gap: 15px;
+                                }
+                                @media screen and (max-width: 575px) {
+                                    grid-template-columns: minmax(1px, auto);
+                                }
+                                grid-gap: 20px;
+                                .form-group{
+                                    &.sb{
+                                        @media screen and (max-width: 575px) {
+                                            margin: auto;
+                                        }
+                                    }
+                                    input{
+                                        height: 53px;
+                                        @media screen and (max-width: 767px) {
+                                            height: 43px;
+                                        }
+                                        padding-left: 20px;
+                                        border-radius: 10px;
+                                        font-size: 14px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

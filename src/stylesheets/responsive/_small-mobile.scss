@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all responsive small-mobile layout style.
+// -----------------------------------------------------------------------------
+/*******************Media Query for Small-Mobile********************/
+
+@include respond-between(lg-mobile, sm-tablet){
+
+}
+
+@include respond-between(xs-mobile, sm-tablet){
+
+}
+
+@include respond-between(xs-mobile, lg-mobile){
+
+}
+
+@media (min-width: 321px) and (max-width: 360px){
+
+}
+
+@media (min-width: 300px) and (max-width: 320px){
+
+}

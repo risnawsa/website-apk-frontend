@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all responsive mobile layout style.
+// -----------------------------------------------------------------------------
+/*******************Media Query for Mobile********************/
+
+@include respond-max(lg-mobile) {
+
+}
+
+@include respond-between(sm-tablet, lg-tablet){
+
+}
+
+@include respond-between(md-tablet, lg-tablet){
+
+}
+
+@include respond-between(lg-mobile, lg-tablet){
+
+}
+
+@include respond-between(xs-mobile, lg-tablet){
+
+}

@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------------
+// This file Global Imports site/application.
+// -----------------------------------------------------------------------------------
+
+@charset 'UTF-8';
+
+// 1 - Vendor
+@import 'vendor/index';
+
+// 2 - Configuration and helpers
+@import 'abstracts/index';
+
+// 3 - Base stuff
+@import 'base/index';
+
+// 4 - Components
+@import 'components/index';
+
+// 5 - Section
+@import 'section/index';
+
+// 6 - Pages
+@import 'pages/index';
+
+// 7 - Responsive
+@import 'responsive/index';

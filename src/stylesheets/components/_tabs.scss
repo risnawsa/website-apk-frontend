@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// This file contains all tabs styles.
+// -----------------------------------------------------------------------------
+
+.content-tab-banners{
+    position: relative;
+    .nav{
+        margin: 0 3rem;
+        &.--prods{
+            @media screen and (max-width: 991px) {
+                margin: 0;
+            }
+            @media screen and (max-width: 767px) {
+                grid-template-columns: 190px 220px 200px;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            margin: 0;
+        }
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        @media screen and (max-width: 767px) {
+            grid-gap: 0;
+            padding: 0;
+            grid-template-columns: 190px 180px 200px;
+        }
+        &.manajemen{
+            @media screen and (max-width: 1199px) {
+                grid-gap: 0;
+                padding: 0;
+                grid-template-columns: 190px 220px 200px 220px 220px;
+            }
+        }
+        .nav-item{
+            padding-bottom: 0;
+            .nav-link{
+                border-radius: 0;
+                padding: 20px;
+                transition: all .5s ease-in-out;
+                font-family: "GilroySemiBold", sans-serif !important;
+                @media screen and (max-width: 767px) {
+                    padding: 15px 10px;
+                }
+                background-color: $white;
+                color: $black;
+                border-bottom: 5px solid transparent;
+                &.active{
+                    background-color: $primary-light;
+                    color: $white;
+                    border-bottom: 5px solid $primary-btn;
+                }
+                &.ft{
+                    border-top-left-radius: 20px;
+                    @media screen and (max-width: 767px) {
+                        border-radius: 0;
+                    }
+                }
+                &.lt{
+                    border-top-right-radius: 20px;
+                    @media screen and (max-width: 767px) {
+                        border-radius: 0;
+                    }
+                }
+                @include on-event{
+                    background-color: $primary-light;
+                    color: $white;
+                    border-bottom: 5px solid $primary-btn;
+                }
+            }
+        }
+    }
+    .tab-content{
+        padding: 50px 0;
+        @media screen and (max-width: 575px) {
+            padding: 20px 0;
+        }
+    }
+}

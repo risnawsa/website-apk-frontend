@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all content styles.
+// -----------------------------------------------------------------------------
+
+.--berita-terkini-media{
+    padding: 5rem 0;
+}
+
+
+.container{
+    padding: 0;
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        max-width: 960px;
+    }
+    @media screen and (max-width: 991px) {
+        max-width: 720px;
+        padding: 0 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 540px;
+    }
+
+    @media screen and (max-width: 575px) {
+        max-width: 100%;
+    }
+}

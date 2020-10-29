@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Angkasa Pura</title>
+        <!-- Start: custom stylesheets -->
+        <link rel="stylesheet" href="../../dist/fe/css/main.css">
+        <link rel="stylesheet" href="../../dist/fe/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="../../dist/fe/vendor/animate.css/animate.css">
+        <link rel="stylesheet" href="../../dist/fe/vendor/datatables/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="../../dist/fe/vendor/datatables/css/responsive.bootstrap4.min.css">
+        <!-- End:/ custom stylesheets -->
+    </head>
+    <body>
+        <div class="topmenu">
+            <!-- start: Header menu -->
+            <div class="header-akp">
+                <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+                    <div class="container">
+                        <a class="navbar-brand" href="home.html">
+                            <div class="logoAkp"></div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Tentang Kami
+                                    </a>
+                                    <div class="dropdown-menu hgMenuHeader --scrlbrr" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="tentang-kami.html">Sejarah</a>
+                                        <a class="dropdown-item" href="tentang-kami.html">Visi & Misi</a>
+                                        <a class="dropdown-item" href="tentang-kami.html">Dewan Komisaris</a>
+                                        <a class="dropdown-item" href="tentang-kami.html">Dewan Direksi</a>
+                                        <a class="dropdown-item" href="tentang-kami.html">Struktur Organisasi</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Media
+                                    </a>
+                                    <div class="dropdown-menu hgMenuHeader --scrlbrr" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="berita-terkini.html">Siaran Pers</a>
+                                        <a class="dropdown-item" href="berita-terkini.html">Berita Terkini</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Produk & Layanan
+                                    </a>
+                                    <div class="dropdown-menu hgMenuHeader --scrlbrr" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="produk_layanan.html">Jasa Kargo</a>
+                                        <a class="dropdown-item" href="#">Pengelolaan Jasa Logistik</a>
+                                        <a class="dropdown-item" href="#">Sistem Logistik Terpadu</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Laporan & Kepatuhan
+                                    </a>
+                                    <div class="dropdown-menu hgMenuHeader --scrlbrr" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" id="MenuLaporanKepatuhan" href="laporan-dan-kepatuhan.html#LaporanKepatuhan">Laporan Tahunan</a>
+                                        <a class="dropdown-item" id="MenuLaporanTahunan" href="laporan-dan-kepatuhan.html#LaporanTahunan">CSR</a>
+                                        <a class="dropdown-item" id="MenuDokumentasiRegulasi" href="laporan-dan-kepatuhan.html#DokumentasiRegulasi">Dokumentasi & Regulasi</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Manajemen Kualitas
+                                    </a>
+                                    <div class="dropdown-menu hgMenuHeader --scrlbrr" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="manajemen-kualitas.html">Pelaporan K3</a>
+                                        <a class="dropdown-item" href="manajemen-kualitas.html">Sertifikasi &
+                                            Standarisasi</a>
+                                        <a class="dropdown-item" href="manajemen-kualitas.html">Sertifikat Halal</a>
+                                        <a class="dropdown-item" href="manajemen-kualitas.html">Halal Non-Conformity</a>
+                                        <a class="dropdown-item" href="manajemen-kualitas.html">Sertifikasi ISO &
+                                            OHSAS</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Peluang Bisnis
+                                    </a>
+                                    <div class="dropdown-menu hgMenuHeader --scrlbrr" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="peluang-bisnis.html">Pelelangan</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="select_languages">
+                                <select id="languages" class="form-control">
+                                    <option selected>Indonesia</option>
+                                    <option>English</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- end:/ Header Menu -->
+
+            <!-- start: carousel -->
+            <div class="carousel-menus">
+                <div class="overlays"></div>
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade top-banner-apk" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner content-banner-apk">
+                        <div class="carousel-item active --itemss">
+                            <div class="imgs-banner-top" style="background-image: url('../fe/images/slider/slide1.jpg');"></div>
+                            <div class="carousel-caption --caption">
+                                <div class="container_text">
+                                    <h1 class="f-GilroyBold title-akp text-white">Kirim Barang Tanpa Khawatir</h1>
+                                    <p>Adapun yang anda kirim, kami siap membantu dengan profesional, aman dan Terbaik untuk konsumen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item --itemss">
+                            <div class="imgs-banner-top" style="background-image: url('../fe/images/slider/slide2.jpg');"></div>
+                            <div class="carousel-caption --caption">
+                                <div class="container_text">
+                                    <h1 class="f-GilroyBold title-akp text-white">Kirim Barang Tanpa Khawatir</h1>
+                                    <p>Adapun yang anda kirim, kami siap membantu dengan profesional, aman dan Terbaik untuk konsumen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item --itemss">
+                            <div class="imgs-banner-top" style="background-image: url('../fe/images/slider/slide1.jpg');"></div>
+                            <div class="carousel-caption --caption">
+                                <div class="container_text">
+                                    <h1 class="f-GilroyBold title-akp text-white">Kirim Barang Tanpa Khawatir</h1>
+                                    <p>Adapun yang anda kirim, kami siap membantu dengan profesional, aman dan Terbaik untuk konsumen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item --itemss">
+                            <div class="imgs-banner-top" style="background-image: url('../fe/images/slider/slide2.jpg');"></div>
+                            <div class="carousel-caption --caption">
+                                <div class="container_text">
+                                    <h1 class="f-GilroyBold title-akp text-white">Kirim Barang Tanpa Khawatir</h1>
+                                    <p>Adapun yang anda kirim, kami siap membantu dengan profesional, aman dan Terbaik untuk konsumen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end:/ carousel -->
+        </div>
+
+        <!-- start: content home -->
+        <div class="contents" id="content-apk">
+            <!-- start: Tab banner -->
+            <section class="tab-banners">
+                <div class="bg">
+                    <div class="container">
+                        <div class="content-tab-banners --home-ct">
+                            <ul class="nav nav-pills nav-fill menu-tab-mobile" id="tabBanner-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active ft" id="cek-kiriman-tab" data-toggle="pill" href="#cek-kiriman" role="tab" aria-controls="cek-kiriman" aria-selected="true">
+                                        <div class="menus">
+                                            <div class="f-GilroySemiBold">
+                                                <i class="fab fa-twitter"></i> Cek Kiriman
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="cek-tarif-tab" data-toggle="pill" href="#cek-tarif" role="tab" aria-controls="cek-tarif" aria-selected="false">
+                                        <div class="menus">
+                                            <div class="f-GilroySemiBold">
+                                                <i class="fab fa-twitter"></i> Cek Tarif
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link lt" id="cek-lokasi-tab" data-toggle="pill" href="#cek-lokasi" role="tab" aria-controls="cek-lokasi" aria-selected="false">
+                                        <div class="menus">
+                                            <div class="f-GilroySemiBold">
+                                                <i class="fab fa-twitter"></i> Cek Lokasi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="tabBanner-tabContent">
+                                <div class="tab-pane fade show active" id="cek-kiriman" role="tabpanel" aria-labelledby="cek-kiriman-tab">
+                                    <form class="forms-akp">
+                                        <div class="row">
+                                            <div class="col-bg col-lg-10 col-md-8 col-sm-6 mb-2 mt-2">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" placeholder="Masukkan ID">
+                                                </div>
+                                            </div>
+                                            <div class="col-bg col-lg-2 col-md-4 col-sm-6 mb-2 mt-2">
+                                                <div class="form-group sb">
+                                                    <button type="button" class="btn btn-primary submit-btns" id="cekKiriman">CEK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="cek-tarif" role="tabpanel" aria-labelledby="cek-tarif-tab">
+                                    <form class="forms-akp">
+                                        <div class="row">
+                                            <div class="col-bg col-lg-4 col-md-6 mb-2 mt-2">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="dari">
+                                                        <option disabled selected>Dari</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-bg col-lg-4 col-md-6 mb-2 mt-2">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="tujuan">
+                                                        <option disabled selected>Tujuan</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-bg col-lg-2 col-md-6 mb-2 mt-2">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="inlineFormInputGroupBerat">Berat</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control --weight" id="inlineFormInputGroupBerat" placeholder="Berat">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">KG</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-bg col-lg-2 col-md-6 mb-2 mt-2">
+                                                <div class="form-group sb">
+                                                    <button type="button" class="btn btn-primary submit-btns" id="cekTarif">CEK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="cek-lokasi" role="tabpanel" aria-labelledby="cek-lokasi-tab">
+                                    <form class="forms-akp">
+                                        <div class="row">
+                                            <div class="col-bg col-lg-10 col-md-8 col-sm-6 mb-2 mt-2">
+                                                <div class="form-group">
+                                                    <input class="form-control" type="text" placeholder="Cari Lokasi Layanan Terdekat">
+                                                </div>
+                                            </div>
+                                            <div class="col-bg col-lg-2 col-md-4 col-sm-6 mb-2 mt-2">
+                                                <div class="form-group sb">
+                                                    <button type="submit" class="btn btn-primary submit-btns">CEK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end:/ Tab banner -->
+
+            <!-- start: Result Search Kiriman -->
+            <section class="result-search">
+                <div class="bg">
+                    <div class="container">
+                        <div class="cards" id="HasilCekKiriman" style="display: none">
+                            <div class="header-cards">
+                                <p class="--awb">AWB Number&nbsp;&nbsp;&nbsp;:<span class="pl-4">157-60367462</span></p>
+                                <p class="--hwb">HWB Number&nbsp;&nbsp;&nbsp;:<span></span></p>
+                            </div>
+                            <div class="body-cards">
+                                <div class="subheaders">
+                                    <div class="grid_layouts --tracking">
+                                        <div class="grid_layouts --subtracking">
+                                            <div>
+                                                <small>Origin</small>
+                                                <p class="mb-0 f-GilroySemiBold">CGK</p>
+                                            </div>
+                                            <div class="liner" style="margin-right: 15px;">
+                                                <div class="liner-circle ft-circle"></div>
+                                                <div class="liner-circle current-circle"></div>
+                                            </div>
+                                            <div>
+                                                <small>Destination</small>
+                                                <p class="mb-0 f-GilroySemiBold">BRU</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <small>Quantity</small>
+                                            <p class="mb-0 f-GilroySemiBold">327</p>
+                                        </div>
+                                        <div>
+                                            <small>Weight</small>
+                                            <p  class="mb-0 f-GilroySemiBold">2551.0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-body">
+                                    <div class="grid_layouts body-result">
+                                        <div class="left-menu-track">
+                                            <div class="date-track --desk">
+                                                <div class="list-date-track">
+                                                    <p>26 Juni 2019 - 20.03</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-menu-track">
+                                            <div class="list-track">
+                                                <div class="grid_layouts sub-body-result">
+                                                    <div>
+                                                        <small>Pieces</small>
+                                                        <p class="mb-0 f-GilroySemiBold">12</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>Gross Weight</small>
+                                                        <p class="mb-0 f-GilroySemiBold">40</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>Volumetric Weight</small>
+                                                        <p class="mb-0 f-GilroySemiBold">46</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>SHC</small>
+                                                        <p class="mb-0 f-GilroySemiBold">FOH</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid_layouts body-result">
+                                        <div class="left-menu-track --active">
+                                            <div class="date-track --desk">
+                                                <div class="list-date-track">
+                                                    <p> 27 September 2019 - 10.22</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-menu-track">
+                                            <div class="list-track">
+                                                <div class="grid_layouts sub-body-result">
+                                                    <div>
+                                                        <small>Pieces</small>
+                                                        <p class="mb-0 f-GilroySemiBold">12</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>Gross Weight</small>
+                                                        <p class="mb-0 f-GilroySemiBold">40</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>Volumetric Weight</small>
+                                                        <p class="mb-0 f-GilroySemiBold">46</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>SHC</small>
+                                                        <p class="mb-0 f-GilroySemiBold">FOH</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid_layouts body-result">
+                                        <div class="left-menu-track">
+                                            <div class="date-track --desk">
+                                                <div class="list-date-track">
+                                                    <p>28 Juni 2019 - 14.30</p>
+                                                    <div class="no-date mt-3">
+                                                        <h5 class="f-GilroyBold text-primary-light">QR0955</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-menu-track">
+                                            <div class="list-track">
+                                                <div class="grid_layouts sub-body-result">
+                                                    <div>
+                                                        <small>Pieces</small>
+                                                        <p class="mb-0 f-GilroySemiBold">12</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>Gross Weight</small>
+                                                        <p class="mb-0 f-GilroySemiBold">40</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>Volumetric Weight</small>
+                                                        <p class="mb-0 f-GilroySemiBold">46</p>
+                                                    </div>
+                                                    <div>
+                                                        <small>SHC</small>
+                                                        <p class="mb-0 f-GilroySemiBold">FOH</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end:/ Result Search Kiriman -->
+
+            <!-- start: Result Search Tarif -->
+            <section class="result-search">
+                <div class="bg">
+                    <div class="container">
+                        <div class="cards" id="HasilCekTarif" style="display: none">
+                            <div class="body-cards">
+                                <table id="TabelHasilTarif" class="table table-striped table-bordered dt-responsive nowrap text-center" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>Origin</th>
+                                            <th>Destination</th>
+                                            <th>Category</th>
+                                            <th>Unit</th>
+                                            <th>Price</th>
+                                            <th>Note</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>Jakarta</td>
+                                            <td>Ambon</td>
+                                            <td>Genco</td>
+                                            <td>Kg</td>
+                                            <td>41191</td>
+                                            <td>Domestic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.</td>
+                                            <td>Jakarta</td>
+                                            <td>Ambon</td>
+                                            <td>Genco</td>
+                                            <td>Kg</td>
+                                            <td>41191</td>
+                                            <td>Domestic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.</td>
+                                            <td>Jakarta</td>
+                                            <td>Ambon</td>
+                                            <td>Genco</td>
+                                            <td>Kg</td>
+                                            <td>41191</td>
+                                            <td>Domestic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.</td>
+                                            <td>Jakarta</td>
+                                            <td>Ambon</td>
+                                            <td>Genco</td>
+                                            <td>Kg</td>
+                                            <td>41191</td>
+                                            <td>Domestic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5.</td>
+                                            <td>Jakarta</td>
+                                            <td>Ambon</td>
+                                            <td>Genco</td>
+                                            <td>Kg</td>
+                                            <td>41191</td>
+                                            <td>Domestic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6.</td>
+                                            <td>Jakarta</td>
+                                            <td>Ambon</td>
+                                            <td>Genco</td>
+                                            <td>Kg</td>
+                                            <td>41191</td>
+                                            <td>Domestic</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end:/ Result Search Tarif -->
+
+            <!-- start: Tentang Kami -->
+            <section class="tentang-kami bg-bluelight-blue-apk">
+                <div class="bg">
+                    <div class="container">
+                        <div class="top-menu-news grid_layouts">
+                            <h3 class="title-akp">Sekilas Tentang Kami</h3>
+                            <a href="#" class="btn-details news-btn --desk-home">
+                                SELENGKAPNYA &nbsp; <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="grid_layouts --prodkSer">
+                            <div class="images-sections">
+                                <div class="images-grids --abouts" style="background-image: url('../fe/images/news/news_1.jpg');"></div>
+                            </div>
+                            
+                            <div class="text-sections">
+                                <p>
+                                    Usaha pelayanan kargo dimulai pada tahun 2017 saat PT. Angkasa Pura II (Persero) mengoperasikan terminal 
+                                    kargo untuk memenuhi kebutuhan perusahaan-perusahaan yang bergerak di sektor logistik. Seiring perkembangan 
+                                    infrastruktur bandara di indonesia dan perbaikan atas layanan bandara yang mengedepankan keamanan dan keselamatan 
+                                    atas pengiriman dan pengelolaan kargo, maka di tahun 2016 PT. Angkasa Pura II (Persero) membentuk anak usaha 
+                                    strategis yakni PT. Angkasa Pura Kargo dengan fokus layanan di bidang jasa operator terminal kargo, pelayanan 
+                                    kargo dan pos udara serta perkembangan prasarana dan sarana terminal kargo PT. Angkasa Pura Kargo beroperasi di 
+                                    sejumlah bandara indonesia yang dikelola oleh PT. Angkasa Pura II (Persero).
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-details news-btn --mob-home">
+                            SELENGKAPNYA &nbsp; <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- end:/ Tentang Kami -->
+
+            <!-- start: produk & layanan -->
+            <section class="menu-tabs-home bg-white-apk">
+                <div class="bg">
+                    <div class="container">
+                        <div class="top-menu-news grid_layouts">
+                            <h3 class="title-akp">Produk & Layanan</h3>
+                            <a href="#" class="btn-details news-btn --desk-home">
+                                LIHAT SEMUA PRODUK &nbsp; <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="grid_layouts --prodkSer">
+                            <div class="nav flex-column nav-pills menu-tab-mobile" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="jasa-kargo-tab" data-toggle="pill" href="#jasa-kargo" role="tab" aria-controls="jasa-kargo" aria-selected="true">
+                                    <div class="grid_layouts --menu-tabs">
+                                        <div class="txt f-GilroySemiBold">Jasa Kargo</div>
+                                        <div class="inc"><i class="fas fa-arrow-right"></i></div>
+                                    </div>
+                                </a>
+                                <a class="nav-link" id="kelola-jasa-tab" data-toggle="pill" href="#kelola-jasa" role="tab" aria-controls="kelola-jasa" aria-selected="false">
+                                    <div class="grid_layouts --menu-tabs">
+                                        <div class="txt f-GilroySemiBold">Pengelolaan Jasa Logistik</div>
+                                        <div class="inc"><i class="fas fa-arrow-right"></i></div>
+                                    </div>
+                                </a>
+                                <a class="nav-link" id="sistem-logistik-tab" data-toggle="pill" href="#sistem-logistik" role="tab" aria-controls="sistem-logistik" aria-selected="false">
+                                    <div class="grid_layouts --menu-tabs">
+                                        <div class="txt f-GilroySemiBold">Sistem Logistik Terpadu</div>
+                                        <div class="inc"><i class="fas fa-arrow-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="jasa-kargo" role="tabpanel" aria-labelledby="jasa-kargo-tab">
+                                    <div class="content">
+                                        <h3 class="sub-title f-GilroySemiBold text-center mb-3">JASA KARGO</h3>
+                                        <article>
+                                            <p>
+                                                Pelayanan terkait dengan pengelolaan kargo mulai dari pengiriman dan pengelolaan kargo yang melalui kawasan bandara, termasuk pelayanan Distribution Center, Spesial Kargo (human remain) dan penanganan Excess Baggage untuk penumpang komersil, individual ataupun korporasi.
+                                            </p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="kelola-jasa" role="tabpanel" aria-labelledby="kelola-jasa-tab">
+                                    <div class="content">
+                                        <h3 class="sub-title f-GilroySemiBold text-center mb-3">PENGELOLAAN JASA LOGISTIK</h3>
+                                        <article>
+                                            <p>
+                                                Pelayanan terkait dengan pengelolaan kargo mulai dari pengiriman dan pengelolaan kargo yang melalui kawasan bandara, termasuk pelayanan Distribution Center, Spesial Kargo (human remain) dan penanganan Excess Baggage untuk penumpang komersil, individual ataupun korporasi.
+                                            </p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="sistem-logistik" role="tabpanel" aria-labelledby="sistem-logistik-tab">
+                                    <div class="content">
+                                        <h3 class="sub-title f-GilroySemiBold text-center mb-3">SISTEM LOGISTIK TERPADU</h3>
+                                        <article>
+                                            <p>
+                                                Pelayanan terkait dengan pengelolaan kargo mulai dari pengiriman dan pengelolaan kargo yang melalui kawasan bandara, termasuk pelayanan Distribution Center, Spesial Kargo (human remain) dan penanganan Excess Baggage untuk penumpang komersil, individual ataupun korporasi.
+                                            </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-details news-btn --mob-home">
+                            LIHAT SEMUA PRODUK &nbsp; <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- end:/ produk & layanan -->
+
+            <!-- start: berita terkini -->
+            <section class="berita-terkini bg-bluelight-apk">
+                <div class="bg">
+                    <div class="container">
+                        <div class="top-menu-news grid_layouts">
+                            <h3 class="title-akp">Berita Terkini</h3>
+                            <a href="berita-terkini.html" class="btn-details news-btn --desk-home">
+                                LIHAT SEMUA BERITA &nbsp; <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="grid_layouts card-news">
+                            <div class="items-card">
+                                <div class="images-grids --blogs" style="background-image: url('../fe/images/news/news_1.jpg');"></div>
+                                <div class="content-news">
+                                    <h5 class="titles">
+                                        Bandara Kertajari akan Jadi Pusat Kawasan Logistik E-Commerce
+                                    </h5>
+                                    <small class="dates">
+                                        24 Okt 2019
+                                    </small>
+                                    <div class="articles">
+                                        <p>
+                                            Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat.
+                                        </p>
+                                    </div>
+                                    <a href="" class="btn-details">
+                                        SELENGKAPNYA &nbsp; <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items-card">
+                                <div class="images-grids --blogs" style="background-image: url('../fe/images/news/news_2.jpg');"></div>
+                                <div class="content-news">
+                                    <h5 class="titles">
+                                        Bandara Kertajari akan Jadi Pusat Kawasan Logistik E-Commerce
+                                    </h5>
+                                    <small class="dates">
+                                        24 Okt 2019
+                                    </small>
+                                    <div class="articles">
+                                        <p>
+                                            Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat.
+                                        </p>
+                                    </div>
+                                    <a href="" class="btn-details">
+                                        SELENGKAPNYA &nbsp; <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="items-card">
+                                <div class="images-grids --blogs" style="background-image: url('../fe/images/news/news_3.jpg');"></div>
+                                <div class="content-news">
+                                    <h5 class="titles">
+                                        Bandara Kertajari akan Jadi Pusat Kawasan Logistik E-Commerce
+                                    </h5>
+                                    <small class="dates">
+                                        24 Okt 2019
+                                    </small>
+                                    <div class="articles">
+                                        <p>
+                                            Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat Menteri Perhubungan Budi Karya Sumadi mengatakan Bandara Internasional Jawa Barat.
+                                        </p>
+                                    </div>
+                                    <a href="" class="btn-details">
+                                        SELENGKAPNYA &nbsp; <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="berita-terkini.html" class="btn-details news-btn --mob-home">
+                            LIHAT SEMUA BERITA &nbsp; <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- end:/ berita terkini -->
+            
+            <!-- start: maps & subscribe -->
+            <section class="maps_subs">
+                <div class="container">
+                    <div class="contents">
+                        <div class="ms">
+                            <div id="maps"></div>
+                            <div class="subsribes">
+                                <form class="forms-akp">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email_sub" placeholder="E-mail">
+                                    </div>
+                                    <div class="form-group sb">
+                                        <button type="submit" class="btn btn-primary submit-btns">SUBSCRIBE</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end:/ maps & subscribe -->
+        </div>
+        <!-- end:/ content home -->
+
+        <!-- start: footer -->
+        <footer>
+            <div class="bg">
+                <div class="container footer">
+                    <div class="footer__top">
+                        <div class="grid_layouts --footer">
+                            <div class="item-footer address">
+                                <div class="head-menus">
+                                    <div class="logo-footers" style="background-image: url('../fe/images/icons/logo-akp.png');"></div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p>
+                                            Komplek Gedung 528, Terminal Kargo Bandara Soekarno-Hatta, Tangerang 19120
+                                        </p>
+                                    </li>
+                                    <li class="phone">
+                                        <i class="fas fa-phone-volume"></i>
+                                        <p>
+                                            (021) 2921 5821
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-fax"></i>
+                                        <p>
+                                            (021) 2921 5821
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <i class="far fa-envelope"></i>
+                                        <p>
+                                            corsec@angkasapurakargo.co.id
+                                        </p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="item-footer">
+                                <div>
+                                    <div class="head-menus">
+                                        <a href="produk_layanan.html" class="title-footer">PRODUK & LAYANAN</a>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="produk_layanan.html">
+                                                Jasa Kargo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="produk_layanan.html">
+                                                Pengelolaan Jasa Logistik
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="produk_layanan.html">
+                                                Sistem Logistik Terpadu
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-footer">
+                                <div class="head-menus">
+                                    <a href="#" class="title-footer">TRACKING</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="home.html">
+                                            Cek Kiriman
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="home.html">
+                                            Cek Tarif
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Cari Kantor Layanan Terdekat
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item-footer">
+                                <div class="head-menus">
+                                    <a href="karir.html" class="title-footer">KARIR</a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="karir.html">
+                                            Cek Karir
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="item-footer">
+                                <div class="head-menus">
+                                    <a href="#" class="title-footer">SOCIAL MEDIA</a>
+                                </div>
+                                <ul class="social-media">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <div class="grid_layouts --footer --bottom-footer">
+                            <div class="item-footer --no"></div>
+                            <div class="item-footer">
+                                <div>
+                                    <div class="head-menus">
+                                        <a href="#" class="title-footer">INSTAGRAM</a>
+                                    </div>
+                                    <div class="grid_layouts --instg">
+                                        <div class="imgs-instg" style="background-image: url('../fe/images/news/news_1.jpg');"></div>
+                                        <div class="imgs-instg" style="background-image: url('../fe/images/news/news_2.jpg');"></div>
+                                        <div class="imgs-instg" style="background-image: url('../fe/images/news/news_3.jpg');"></div>
+                                        <div class="imgs-instg" style="background-image: url('../fe/images/news/news_1.jpg');"></div>
+                                        <div class="imgs-instg" style="background-image: url('../fe/images/news/news_2.jpg');"></div>
+                                        <div class="imgs-instg" style="background-image: url('../fe/images/news/news_3.jpg');"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer">
+                                <div class="head-menus">
+                                    <a href="#" class="title-footer">TWITTER</a>
+                                </div>
+                                <ul>
+                                    <li class="mb-3">
+                                        <p class="text-white mb-0">
+                                            Direktur Utama Denny Fikri berbagi pandangannya terhadap industri logistik don supply chain https://t.co/E9RUHExFYZ
+                                        </p>
+                                        <small style="color: #85a5ec;">
+                                            2 days ago
+                                        </small>
+                                    </li>
+                                    <li class="mb-3">
+                                        <p class="text-white mb-0">
+                                            Aksi Peduli Berbagi Masker Angkasa Pura Kargo bersama Asperindo kepada masyarakat di Pekanbaru https://t.co/E9RUHExFYZ
+                                        </p>
+                                        <small style="color: #85a5ec;">
+                                            3 days ago
+                                        </small>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item-footer --no"></div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p>&copy; Copyright 2019 PT Angkasa Pura Kargo</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end:/ footer -->
+        
+
+        <!-- Start: vendor js -->
+        <script type="text/javascript" src="../fe/vendor/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../fe/vendor/popper.js/dist/popper.min.js"></script>
+        <script type="text/javascript" src="../fe/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../fe/vendor/datatables/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../fe/vendor/datatables/js/dataTables.bootstrap4.min.js"></script>
+        <script type="text/javascript" src="../fe/vendor/datatables/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="../fe/vendor/datatables/js/responsive.bootstrap4.min.js"></script>
+        <!-- End/: vendor js -->
+
+        <script type="text/javascript" src="../fe/js/main.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWbzeHrXphcValY1xD4KsQBWNPgxieiCY&callback=initMap"></script>
+        <script type="text/javascript">
+            /********************************/
+            /*Direct Tab Menu From Header*/
+            /********************************/
+            $(document).ready(function () {
+                var LaporanKepatuhan = $('#MenuLaporanKepatuhan');
+                var LaporanTahunan = $('#MenuLaporanTahunan');
+                var DokumentasiRegulasi = $('#MenuDokumentasiRegulasi');
+                var menutab = $('#tabBanner-tabContent');
+
+                $(LaporanKepatuhan).click(function() {
+                    console.log('laman benar')
+                    $(this).addClass('.active');
+                    $('.pt-'+$(this).data('id')+'').addClass('show.active');
+                });
+            });
+        </script>
+    </body>
+</html>

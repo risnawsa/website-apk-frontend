@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all scrollbar styles.
+// -----------------------------------------------------------------------------
+
+.--scrlbrr{
+    scrollbar-color: $primary-light $white !important;
+    scrollbar-width: thin !important;
+    scroll-behavior: smooth !important;
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+        
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 6px 6px 6px 6px $white;
+    }
+        
+    &::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 6px 6px 6px 6px $primary-light; 
+        border-radius: 10px;
+    }
+}

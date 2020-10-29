@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// This file contains all forms styles.
+// -----------------------------------------------------------------------------
+
+form{
+    &.forms-akp{
+        .form-group{
+            margin-bottom: 0;
+
+            select, input {
+                padding: 15px 20px;
+                height: auto;
+                border-color: $main-line;
+                border-radius: 10px;
+            }
+
+            .input-group{
+                input{
+                    &.--weight{
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                }
+                .input-group-prepend{
+                    .input-group-text{
+                        border-radius: 0;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        border-left-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-field{
+        border: 1px solid #ced4da;
+        padding: 1px 10px;
+        .form-control{
+            border: unset;
+            &:focus{
+                box-shadow: unset;
+            }
+        }
+    }
+}

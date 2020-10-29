@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all typography style.
+// -----------------------------------------------------------------------------
+
+.f-Gilroy {
+    font-family: "GilroyMedium",sans-serif !important;
+}
+
+.f-GilroyBold {
+    font-family: "GilroyBold", sans-serif !important;
+}
+
+.f-GilroySemiBold {
+    font-family: "GilroySemiBold", sans-serif !important;
+}
+
+.title-akp{
+    color: $blue-text;
+    font-size: 34px;
+    font-family: "GilroyBold", sans-serif !important;
+    @media screen and (max-width: 992px) {
+        font-size: 28px;
+    }
+    @media screen and (max-width: 575px) {
+        font-size: 24px;
+    }
+}
+
+.sub-title-media{
+    color: $dark-text;
+    font-size: 26px;
+    @media screen and (max-width: 991px) {
+        font-size: 22px;
+    }
+    @media screen and (max-width: 575px) {
+        font-size: 18px;
+    }
+}
+
+.sub-title{
+    color: $blue-text;
+    font-size: 20px;
+    @media screen and (max-width: 575px) {
+        font-size: 18px;
+    }
+}
+
+.title-karir{
+    font-size: 18px;
+    color: $dark-text;
+    font-weight: 600;
+    font-family: "GilroySemiBold", sans-serif !important;
+}
+
+.sub-title-karir{
+    font-size: 14px;
+    color: $primary-btn;
+}
+
+.text-grey{
+    color: $dark-text !important;
+}
+
+.text-white{
+    color: $white !important;
+}
+
+.text-primary-light{
+    color: $primary-light;
+}
+
+.text-black{
+    color: $black !important;
+}

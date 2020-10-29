@@ -1,0 +1,74 @@
+{
+  "_from": "jquery-plugin-c-share",
+  "_id": "jquery-plugin-c-share@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-YGF0X4B/UJ4NJShC1NDXYmSXOgpBRmNamFq8V4v0h4oEpMgteYcYwusRTn6mjOoxy6kgRye9DC5gQ/jyVtXLWg==",
+  "_location": "/jquery-plugin-c-share",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jquery-plugin-c-share",
+    "name": "jquery-plugin-c-share",
+    "escapedName": "jquery-plugin-c-share",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-plugin-c-share/-/jquery-plugin-c-share-1.1.0.tgz",
+  "_shasum": "c470601df568df8ee7303dd09d6ad91f39b0a639",
+  "_spec": "jquery-plugin-c-share",
+  "_where": "C:\\xampp\\htdocs\\LANDING\\new-angkasa-pura-kargo",
+  "author": {
+    "name": "Lucas, Yang"
+  },
+  "bugs": {
+    "url": "https://github.com/ycs77/jquery-plugin-c-share/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A share to community buttons.",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "change-case": "^3.0.2",
+    "create-banner": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "uglify-js": "^3.4.9"
+  },
+  "homepage": "https://github.com/ycs77/jquery-plugin-c-share",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "jquery-plugin",
+    "share",
+    "share-buttons",
+    "community"
+  ],
+  "license": "MIT",
+  "main": "dist/jquery.c-share.js",
+  "name": "jquery-plugin-c-share",
+  "peerDependencies": {
+    "jquery": "^3.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycs77/jquery-plugin-c-share.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "compress": "uglifyjs dist/jquery.c-share.js -o dist/jquery.c-share.min.js -c -m --comments /^!/",
+    "dev": "cross-env NODE_ENV=development rollup -c",
+    "release": "npm run build && npm run compress",
+    "watch": "rollup -c -w"
+  },
+  "version": "1.1.0"
+}

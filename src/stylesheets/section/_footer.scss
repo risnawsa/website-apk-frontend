@@ -1,0 +1,132 @@
+// -----------------------------------------------------------------------------
+// This file contains all footer styles.
+// -----------------------------------------------------------------------------
+
+footer{
+    background-color: $secondary-light;
+    .bg{
+        background-image: url('../../../dist/fe/images/footer_bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-right-radius: 100px;
+        .footer{
+            position: relative;
+            &.pd{
+                .footer__top{
+                    padding-top: 5rem;
+                }
+            }
+            .--no{
+                @media screen and (max-width: 991px) {
+                    display: none;
+                }
+            }
+            @include e('top'){
+                border-bottom: 1px solid $line-footer;
+                padding: 20rem 0 5rem;
+                @media screen and (max-width: 991px) {
+                    padding: 15rem 0 5rem;
+                }
+                @media screen and (max-width: 575px) {
+                    padding: 20rem 0 5rem;
+                }
+                &.--sub-page{
+                    padding: 5rem 0;
+                }
+                .address{
+                    ul{
+                        padding-top: 13px;
+                        li{
+                            padding-bottom: 0;
+                            display: grid;
+                            grid-gap: 10px;
+                            grid-template-columns: minmax(1px, 20px) minmax(1px, auto);
+                            i{
+                                padding: 7px 0;
+                                color: $white;
+                            }
+                            p{
+                                color: $white;
+                                padding-bottom: 0;
+                                font-family: "GilroyLight", sans-serif !important;;
+                            }
+                            &.phone{
+                                i{
+                                    transform: rotate(-45deg);
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .imgs-instg{
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    padding-top: 100%;
+                    border-radius: 10px;
+                }
+                .head-menus{
+                    margin: 1rem 0;
+                    height: 67.5px;
+                    .title-footer{
+                        color: $white;
+                        line-height: 4.5;
+                        transition: all .5s ease-in-out;
+                        font-family: "GilroySemiBold", sans-serif !important;
+                        @media screen and (max-width: 425px) {
+                            height: 45px;
+                            line-height: 3;
+                        }
+                        @include on-event{
+                            color: $black;
+                        }
+                    }
+                    .logo-footers{
+                        background-repeat: no-repeat;
+                        background-position: left;
+                        background-size: contain;
+                        height: 60px;
+                    }
+                }
+                ul{
+                    &.social-media{
+                        display: grid;
+                        grid-template-columns: minmax(1px, 40px) minmax(1px, 40px) minmax(1px, 40px);
+                        grid-gap: 10px;
+                        li{
+                            margin: auto;
+                            a{
+                                padding: 10px;
+                                background-color: $white;
+                                color: $blue;
+                                border-radius: 50%;
+                                border: 1px solid transparent;
+                                font-size: 16px !important;
+                                transition: all .5s ease-in-out;
+                                @include on-event{
+                                    background-color: $blue;
+                                    color: $white;
+                                    border: 1px solid $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            @include e('bottom'){
+                padding: 20px 0 5px;
+                @media screen and (max-width: 425px) {
+                    padding: 20px 0;
+                }
+                p{
+                    line-height: 1.5;
+                    color: $white;
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}

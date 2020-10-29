@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains all base styles.
+// -----------------------------------------------------------------------------
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    background-color: $secondary-light;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, b, div{
+    font-family: "Gilroy", sans-serif !important;
+    letter-spacing: .5px !important;
+    word-wrap: break-word;
+    white-space: inherit !important;
+}
+
+p{
+    font-size: 14px !important;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    line-height: 1.3;
+    text-decoration: none !important;
+    font-size: 14px !important;
+
+
+    @include on-event {
+        text-decoration: none !important;
+        color: $black;
+    }
+}
+
+div, button, select {
+    &:focus {
+        outline: none !important;
+    }
+}

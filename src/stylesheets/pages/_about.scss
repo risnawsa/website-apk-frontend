@@ -1,0 +1,179 @@
+// -----------------------------------------------------------------------------
+// This file contains all about styles.
+// -----------------------------------------------------------------------------
+
+.tentang-kami-sec{
+    padding: 20rem 0 0;
+    @media screen and (max-width: 767px) {
+        padding-top: 3rem;
+    }
+    .bg{
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        background-color: $white;
+        @media screen and (max-width: 767px) {
+            padding-top: 3rem;
+        }
+    }
+    .content-abouts{
+        position: relative;
+        .articles{
+            &.--top{
+                padding-top: 300px;
+                @media screen and (max-width: 1199px) {
+                    padding-top: 200px;
+                }
+                @media screen and (max-width: 991px) {
+                    padding-top: 100px;
+                }
+                @media screen and (max-width: 767px) {
+                    padding-top: 0;
+                }
+                padding-bottom: 5rem;
+            }
+        }
+        .img-abouts{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-top: -12rem;
+            @media screen and (max-width: 767px) {
+                margin-top: 0;
+                position: unset;
+            }
+        }
+        .misi-abouts{
+            list-style-type: disc;
+            padding-inline-start: 16px;
+            color: $primary-light;
+            li{
+                p{
+                    color: $black;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.komisaris-sec{
+    background-color: $white;
+    .bg{
+        background-color: $secondary-light;
+        padding: 5rem 0;
+        padding-left: 5%;
+        margin-right: 5%;
+        @media screen and (max-width: 767px) {
+            padding-left: 0;
+            margin-right: 0;
+        }
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        .komisaris{
+            .imgs-komisaris{
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 330px;
+                @media screen and (max-width: 425px) {
+                    height: 250px;
+                } 
+                border-radius: 50px;
+                &.--mob{
+                    display: none;
+                    @media screen and (max-width: 991px) {
+                        display: block;
+                    } 
+                }
+                &.--desk{
+                    @media screen and (max-width: 991px) {
+                        display: none;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.title-akp{
+    text-align: left;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.direksi-sec{
+    .bg{
+        padding: 5rem 0 15rem;
+        @media screen and (max-width: 991px) {
+            padding: 5rem 0;
+        }
+        border-top-left-radius: 100px;
+        background-image: url('../../../dist/fe/images/produk_bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .direksi{
+            .imgs-slick{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 330px;
+                @media screen and (max-width: 425px) {
+                    height: 250px;
+                } 
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+.--berita-terkini-media, .tentang-kami-sec{
+    .content-abouts{
+        .articles{
+            padding: 10px 80px;
+            @media screen and (max-width: 767px) {
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.img-abouts{
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40%;
+    @media screen and (max-width: 575px) {
+        padding-top: 60%;
+        border-radius: 50px;
+    }
+}
+
+.struktur-sec{
+    border-top-left-radius: 100px;
+    .bg{
+        background-image: url('../../../dist/fe/images/bg_sec1.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 7rem 0;
+        .container{
+            .content-abouts{
+                margin: 2rem 0;
+                div{
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding-top: 40%;
+                    width: 100%;
+                    @media screen and (max-width: 991px) {
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}

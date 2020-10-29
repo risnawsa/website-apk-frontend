@@ -1,0 +1,49 @@
+{
+  "name": "angkasapura",
+  "version": "1.0.0",
+  "description": "This if for angkasa pura website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risnawsa/AngkasaPura.git"
+  },
+  "keywords": [
+    "angkasa-pura"
+  ],
+  "author": "Risna Wati Sainudin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/risnawsa/AngkasaPura/issues"
+  },
+  "homepage": "https://github.com/risnawsa/AngkasaPura#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery-plugin-c-share": "^1.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ]
+}

@@ -1,0 +1,139 @@
+// -----------------------------------------------------------------------------
+// This file contains all header styles.
+// -----------------------------------------------------------------------------
+
+.header-akp{
+    nav{
+        &.navbar{
+            .navbar-brand{
+                .logoAkp{
+                    background-image: url('../../../dist/fe/images/icons/logo-akp.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    width: 156px;
+                    height: 63px;
+                }
+            }
+            .navbar-toggler{
+                border-color: transparent;
+                cursor: pointer;
+
+                .navbar-toggler-icon{
+                    background-image: url('../../../dist/fe/images/icons/toggle-burger.png');
+                }
+            }
+            .navbar-collapse{
+                @media screen and (max-width: 1199px) {
+                    margin-top: 1rem;
+                    background-color: $primary-light;
+                    border: 1px solid $main-line;
+                    padding: 10px 20px;
+                    .dropdown-menu {
+                        padding: 0;
+                        .dropdown-item{
+                            padding: 7px 15px;
+                        }
+                    }
+                }
+                .navbar-nav{
+                    .nav-item{
+                        padding-bottom: 0;
+                        margin-right: 5px;
+                        @media screen and (max-width: 1199px) {
+                            margin-bottom: 10px;
+                        }
+                        &.active{
+                            .nav-link{
+                                background-color: #ffffff;
+                                color: #145380;
+                                border-bottom: unset;
+                                font-weight: bolder;
+                                border-radius: 20px;
+                                @media screen and (max-width: 1199px){
+                                    border-radius: 0;
+                                }
+                            }
+                        }
+                        .nav-link{
+                            padding: 10px 9px;
+                            color: $white;
+                            font-family: "GilroyLight", sans-serif !important;
+                            @media screen and (max-width: 1199px) {
+                                padding-right: 5px;
+                                padding-left: 5px;
+                            }
+                            &::after{
+                                margin-bottom: -2.5px;
+                            }
+                        }
+                    }
+
+                    .dropdown{
+                        @include on-event{
+                            .dropdown-menu{
+                                opacity: 1;
+                                display: block;
+                                animation: fadeIn 0.7s;
+                                animation-fill-mode: forwards;
+                            }
+                        }
+                        .dropdown-menu{
+                            border-radius: 0;
+                            padding: 0;
+                            overflow-y: auto;
+                            .dropdown-item{
+                                padding: 10px 20px;
+                                line-height: 1.5;
+                                transition: all .3s ease-in-out;
+                                @include on-event{
+                                    background-color: $primary-light;
+                                    color: $white;
+                                }
+                                &.active{
+                                    background-color: $primary-light;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .select_languages{
+                    border-left: 1px solid $white;
+                    padding-left: 10px;
+                    @media screen and (max-width: 1199px) {
+                        padding-left: 0;
+                    }
+                    select{
+                        padding: 10px 0;
+                        cursor: pointer;
+                        color: $white;
+                        background-color: transparent;
+                        border: unset;    
+                        font-size: 14px !important;
+                        option{
+                            color: $primary-light;
+                            background-color: $white;
+                            font-weight: bold;
+                            @include on-event{
+                                color: $white;
+                                background-color: $primary-light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.animate-head {
+            background-color: $primary-light;
+            border-bottom: 1px solid $white;
+            animation: smoothScrollY 1s forwards !important;
+            animation-fill-mode: smoothScrollY 1s forwards !important;
+
+            &::before {
+                animation: smoothScrollY 1s forwards !important;
+                animation-fill-mode: smoothScrollY 1s forwards !important;
+            }
+        }
+    }
+}

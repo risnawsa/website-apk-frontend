@@ -1,0 +1,159 @@
+// -----------------------------------------------------------------------------
+// This file contains all button styles.
+// -----------------------------------------------------------------------------
+
+button{
+    &.btn-search{
+        background-color: transparent;
+        border: unset;
+    }
+    &.btn{
+        &:focus{
+            box-shadow: unset;
+        }
+    }
+    &.submit-btns{
+        background-color: $primary-btn;
+        border-color: $primary-btn;
+        padding: 10px 20px;
+        font-size: 12px;
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        @media screen and (max-width: 767px) {
+            padding: 10px;
+            width: 145px;
+        }
+        @include on-event{
+            background-color: transparent;
+            color: $primary-btn;
+            border-color: $primary-btn;
+            font-weight: 500;
+        }
+    }
+    &.--view-details{
+        position: relative;
+        height: 50px;
+        width: 150px;
+        text-transform: uppercase;
+        font-family: "GilroySemiBold", sans-serif !important;
+        &::after{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &[aria-expanded="false"]{
+            &::after{
+                content: 'Lihat Detail';
+            }
+        }
+        &[aria-expanded="true"]{
+            &::after{
+                content: 'Tutup';
+            }
+        }
+    }
+    &.--report-arrw{
+        position: relative;
+        margin-left: auto;
+        &::after{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: '\276E';
+            margin-top: -10px;
+            margin-left: -2px;
+            color: $white;
+        }
+        &[aria-expanded="false"]{
+            &::after{
+                transform: rotate(-90deg);
+            }
+        }
+        &[aria-expanded="true"]{
+            &::after{
+                transform: rotate(90deg);
+            }
+        }
+    }
+    &.dropdown-main{
+        border: 1px solid $blue-text;
+        padding: 10px 20px;
+        color: $blue-text;
+        @include on-event{
+            color: $blue-text;
+        }
+        &::after{
+            content: '' !important;
+            color: transparent !important;
+            background-image: url('../../../dist/fe/images/icons/angle-blue.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 15px;
+            width: 20px;
+            vertical-align: 0;
+        }
+    }
+
+    &.shares{
+        &.fb-share{
+
+        }
+        &.twitter-share{
+
+        }
+        &.google-share{
+
+        }
+        &.wa-share{
+
+        }
+        &.add-new{
+
+        }
+    }
+}
+
+a{
+    &.--report{
+        margin: auto;
+        text-align: center;
+        display: block;
+        padding: 5px 50px;
+        background-color: $blue-text;
+        color: $white;
+        border: 1px solid $blue-text;
+        transition: all .5s ease-in-out;
+        @include on-event{
+            background-color: transparent;
+            color: $blue-text !important;
+            border: 1px solid $blue-text;
+        }
+    }
+}
+
+.btn-details{
+    color: $secondary-btn;
+    transition: all .3s ease-in-out;
+    font-family: "GilroySemiBold", sans-serif !important;
+
+    &.news-btn{
+        line-height: 3;
+        @media screen and (max-width: 425px) {
+           line-height: 10px;
+        }
+    }
+}
+
+.dropdown-menu{
+    &.--drop-apk{
+        border-radius: 0;
+        .dropdown-item{
+            color: $blue-text;
+            @include on-event{
+                color: $black;
+            }
+        }
+    }
+}

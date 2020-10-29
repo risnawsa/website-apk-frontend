@@ -1,0 +1,98 @@
+// -----------------------------------------------------------------------------
+// This file contains all card styles.
+// -----------------------------------------------------------------------------
+
+.items-card{
+    .content-news{
+        .titles{
+            margin: 1.5rem 0 .2rem;
+            color: $dark-text;
+            font-size: 18px;
+            line-height: 1.4;
+            font-family: "GilroySemiBold", sans-serif !important;
+            @media screen and (max-width: 575px) {
+                font-size: 17px;
+            }
+        }
+        .dates{
+            color: $light-grey;
+        }
+        .articles{
+            width: 100%;
+            @include truncate-text; 
+            p{
+                margin: 0;
+                line-height: 1.5;
+
+                &.submenu-titles{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: ':';
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cards-white-br{
+    margin-bottom: 5rem;
+    .card{
+        margin: 3rem 0;
+        border-radius: 20px;
+
+        &:not(:last-of-type),
+        &:not(:first-of-type) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .card-header{
+            background-color: $white;
+            padding: 40px;
+        }
+
+        .card-body{
+            padding: 40px 80px;
+            @media screen and (max-width: 575px) {
+                padding: 40px;
+            }
+        }
+    }
+
+    &.--report{
+        .card{
+            margin: 1.5rem 0;
+            &:not(:last-of-type),
+            &:not(:first-of-type) {
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .card-header{
+                background-color: $primary-light;
+                padding: 20px 25px;
+                display: grid;
+                grid-template-columns: minmax(1px, auto) minmax(1px, 60px);
+                grid-gap: 10px;
+                color: $white;
+                .collapsing{
+                    transition-duration: 0.5s;
+                }
+            }
+            .card-body{
+                padding: 30px 40px;
+                @media screen and (max-width: 575px) {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

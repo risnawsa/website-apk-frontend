@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all responsive tablet layout style.
+// -----------------------------------------------------------------------------
+/*******************Media Query for Tablet********************/
+
+@include respond-between-lg(lg-tablet, lg-dekstop){
+
+}
+
+@include respond-between-lg(xs-mobile, lg-dekstop){
+
+}
+
+@include respond-between(lg-tablet, md-dekstop){
+
+}
+
+@include respond-between(lg-mobile, md-dekstop){
+
+}

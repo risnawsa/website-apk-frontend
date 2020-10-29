@@ -1,0 +1,163 @@
+// -----------------------------------------------------------------------------
+// This file contains all grid styles.
+// -----------------------------------------------------------------------------
+
+.grid_layouts{
+    display: grid;
+
+    &.--footer{
+        grid-template-columns: minmax(1px, 0.4fr) minmax(1px, 0.25fr) minmax(1px, 0.25fr) minmax(1px, 0.1fr);
+        grid-gap: 50px;
+        @media screen and (max-width: 991px) {
+            grid-template-columns: minmax(1px, 0.5fr) minmax(1px, 0.5fr);
+        }
+        @media screen and (max-width: 425px) {
+            grid-template-columns: minmax(1px, auto);
+            grid-gap: 0;
+        }
+    }
+
+    &.--bottom-footer{
+        @media screen and (max-width: 575px) {
+            grid-template-columns: minmax(1px, auto);
+            grid-gap: 0;
+        }
+    }
+
+    &.card-news{
+        grid-template-columns: repeat(3,minmax(1px, 0.33fr));
+        grid-gap: 60px 20px;
+        @media screen and (max-width: 767px) {
+            grid-template-columns: minmax(1px, auto);
+            grid-gap: 50px;
+        }
+    }
+
+    &.--sub-cards{
+        grid-template-columns: minmax(1px, 100px) minmax(1px, auto);
+        grid-gap: 20px;
+        margin-bottom: 5px;
+    }
+
+    &.top-menu-news{
+        margin: 3rem 0;
+        grid-template-columns: minmax(1px, auto) minmax(1px, 190px);
+        grid-gap: 10px;
+        @media screen and (max-width: 767px) {
+            grid-template-columns: minmax(1px, auto);
+            grid-gap: 0;
+            margin: 3rem 0 1.5rem;
+        }
+    }
+
+    &.--prodkSer{
+        grid-template-columns: minmax(1px, 270px) minmax(1px, auto);
+        grid-gap: 50px;
+        @media screen and (max-width: 767px) {
+            grid-template-columns: minmax(1px, auto);
+            grid-gap: 20px;
+        }
+    }
+
+    &.--menu-tabs{
+        grid-template-columns: minmax(1px, auto) minmax(1px, 15px);
+        grid-gap: 10px;
+        @media screen and (max-width: 767px) {
+            grid-template-columns: minmax(1px, auto);
+            text-align: center;
+        }
+    }
+
+    &.menu-contents{
+        grid-template-columns: repeat(2,minmax(1px, .5fr));
+        grid-gap: 30px;
+        margin: 2rem 0;
+        @media (min-width: 768px) and (max-width: 991px) {
+            grid-template-columns: minmax(1px, auto);
+            grid-gap: 0;
+        }
+        @media screen and (max-width: 575px) {
+            grid-template-columns: minmax(1px, auto);
+            grid-gap: 0;
+        }
+    }
+
+    &.--card-collapse{
+        grid-template-columns: minmax(1px, 190px) minmax(1px, auto);
+        grid-gap: 30px;
+        @media screen and (max-width: 991px) {
+            grid-template-columns: minmax(1px, 250px) minmax(1px, auto);
+        }
+        @media screen and (max-width: 575px) {
+            grid-template-columns: minmax(1px, auto);
+        }
+    }
+
+    &.--komisaris{
+        grid-template-columns: minmax(1px, auto) minmax(1px, 400px);
+        grid-gap: 50px;
+        @media screen and (max-width: 991px) {
+            grid-template-columns: minmax(1px, auto);
+        }
+    }
+
+    &.--slicks{
+        grid-template-columns: minmax(1px, 400px) minmax(1px, auto);
+        grid-gap: 50px;
+        @media screen and (max-width: 991px) {
+            grid-template-columns: minmax(1px, auto);
+        }
+    }
+
+    &.--instg{
+        grid-template-columns: repeat(3,minmax(1px, 100px));
+        grid-gap: 25px;
+    }
+
+    &.--list-menu-rp{
+        grid-template-columns: minmax(1px, auto) minmax(1px, 150px);
+        grid-gap: 20px;
+        @media screen and (max-width: 767px) {
+            grid-template-columns: minmax(1px, auto);
+        }
+    }
+
+    &.--tracking{
+        grid-template-columns: repeat(3,minmax(1px, auto));
+        @media screen and (max-width: 575px) {
+            grid-template-columns: minmax(1px, auto);
+        }
+        grid-gap: 20px;
+    }
+
+    &.--subtracking{
+        grid-template-columns: minmax(1px, 55px) minmax(1px, 150px) minmax(1px, auto);
+        grid-gap: 0;
+        @media screen and (max-width: 424px) {
+            grid-template-columns: minmax(1px, auto);
+            grid-gap: 20px;
+        }
+    }
+
+    &.body-result{
+        grid-template-columns: minmax(1px, 180px) minmax(1px, auto);
+        grid-gap: 80px;
+        @media screen and (max-width: 991px) {
+            grid-gap: 20px;
+        }
+        @media screen and (max-width: 767px) {
+            grid-template-columns: minmax(1px, auto);
+        }
+    }
+
+    &.sub-body-result{
+        grid-template-columns: repeat(4,minmax(1px, auto));
+        grid-gap: 30px;
+        @media screen and (max-width: 575px) {
+            grid-template-columns: repeat(2,minmax(1px, auto));
+        }
+        @media screen and (max-width: 525px) {
+            grid-template-columns: minmax(1px, auto);
+        }
+    }
+}

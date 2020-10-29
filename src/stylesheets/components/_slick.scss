@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains all slick styles.
+// -----------------------------------------------------------------------------
+
+.direksi{
+    button{
+        &.slick-arrow{
+            transform: translate(-50%, -50%);
+            bottom: -100px;
+            top: unset;
+            @media screen and (max-width: 991px) {
+                top: 400px;
+            }
+            @media screen and (max-width: 425px) {
+                top: 280px;
+            }
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            left: unset;
+            background-color: $primary-light;
+            &::before{
+                font-size: 40px;
+                border-radius: 20px;
+                opacity: 1;
+                line-height: 1.1;
+            }
+        }
+        &.slick-prev{
+            right: 60px;
+        }   
+        &.slick-next{
+            right: 0;
+        }
+    }
+}

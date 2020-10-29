@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all report styles.
+// -----------------------------------------------------------------------------
+
+.--laporan-kepatuhan{
+    .articles{
+        margin: 0 3rem;
+        &.--tabs{
+            .items{
+                margin-left: -25px;
+            }
+        }
+        .items{
+            list-style-type: upper-alpha;
+            margin-left: -16px;
+            li{
+                padding-left: 16px;
+                font-family: "GilroySemiBold", sans-serif !important;
+
+                .sub-items{
+                    list-style-type: lower-alpha;
+                    font-size: 14px;
+                    padding-inline-start: 16px;
+                    margin-top: 2rem;
+                    li{
+                        font-family: "GilroyMedium",sans-serif !important;
+                        padding-left: 12px;
+                        color: $dark-text;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-cards{
+        background-color: white;
+        padding: 20px;
+        margin: auto 5rem;
+        @media screen and (max-width: 767px) {
+            margin: auto 3rem;
+        }
+        @media screen and (max-width: 575px) {
+            margin: auto;
+            padding: 10px;
+        }
+        @include e('search-field'){
+            margin-bottom: 1rem;
+        }
+        @include e('list'){
+            padding: 10px 20px;
+            border-bottom: 1px solid $light-grey;
+
+            &:last-of-type{
+                border-bottom: unset;
+            }
+        }
+    }
+}
